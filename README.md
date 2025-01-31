@@ -19,7 +19,7 @@ Prerequisites
 
 ## Installation
 
-```
+```bash
 # Clone the repository
 git clone https://github.com/oyinlade/image-caption-classifier.git
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-```
+```python
 from caption_classifier import ImageCaptionClassifier
 
 # Initialize the classifier
@@ -43,6 +43,28 @@ print(f"Caption: {result.caption}")
 print(f"Confidence: {result.confidence}")
 ```
 
+## 🏗️ Project Structure
+```bash
+image-caption-classifier/
+│── src/                  # Source code
+│   ├── __init__.py       # Marks it as a package
+│   ├── train.py          # Model training script
+│   ├── predict.py        # Inference script
+│   ├── data_loader.py    # Loads MSCOCO dataset
+│   ├── model.py          # Defines the deep learning model
+│
+│── notebooks/            # Jupyter notebooks for experimentation
+│   ├── colab_train.ipynb # Training notebook (Google Colab)
+│   ├── colab_test.ipynb  # Testing & visualization notebook
+│
+│── models/               # Saved trained models 
+│   ├── model.pth         # Pretrained model
+│
+│── requirements.txt      # Dependencies (for local dev)
+│── README.md             # Documentation
+│── .gitignore            # Ignore unnecessary files
+
+```
 ## 🤝 Contributing
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
